@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "core版解码": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

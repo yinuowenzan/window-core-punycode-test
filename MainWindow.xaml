@@ -1,0 +1,58 @@
+﻿<Window x:Class="core版解码.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="punycode转换" Height="450" Width="800">
+    <!--<Window.Background>
+        <ImageBrush ImageSource="/a.png"/>
+        --><!--用于窗体图片--><!--
+    </Window.Background>-->
+    <Grid HorizontalAlignment="Center" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="86*"/>
+            <ColumnDefinition Width="733*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="转换前文本" VerticalAlignment="Top" Width="93" FontSize="16" Grid.ColumnSpan="2" AutomationProperties.HelpText="????????" Margin="10,0,0,0">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock x:Name="bvcb" Height="20" Margin="364,0,0,0" TextWrapping="Wrap" Text="转换回文本" VerticalAlignment="Top" Width="87" HorizontalAlignment="Left" FontSize="16" Grid.Column="2">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBox x:Name="文本框1" HorizontalAlignment="Left" Height="23" Margin="10,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="278" FontSize="14" AutomationProperties.HelpText="转转为punycode" Grid.ColumnSpan="2">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="文本框2" HorizontalAlignment="Left" Height="23" Margin="366,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="278" AutomationProperties.HelpText="punycode转换回用文文" Grid.Column="2">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="按钮1" Content="转换" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="93" AutomationProperties.Name="按钮1" Click="按钮1_Click" AutomationProperties.HelpText="转换为punycode" FontSize="16" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush Stretch="None"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="按钮2" Content="转换回" HorizontalAlignment="Left" Margin="366,50,0,0" VerticalAlignment="Top" Width="88" Click="按钮2_Click" AutomationProperties.HelpText="转换为文本" FontSize="16" Grid.Column="2">
+            <Button.Background>
+                <ImageBrush Stretch="None"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="关闭" Content="关闭" HorizontalAlignment="Left" Margin="248,103,0,0" VerticalAlignment="Top" Width="76" Click="关闭_Click" Grid.Column="1" AutomationProperties.HelpText="关闭">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="改变a" Content="修改" HorizontalAlignment="Left" Margin="248,53,0,0" VerticalAlignment="Top" Width="76" Click="改变_Click" Grid.Column="1" AutomationProperties.HelpText="修改">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

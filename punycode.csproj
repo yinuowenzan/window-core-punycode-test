@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>core版解码.App</StartupObject>
+    <Version>1.0.4.2</Version>
+    <Authors>千</Authors>
+    <Description>punycode转换</Description>
+    <PackageProjectUrl>rtfs.ren.refs.千</PackageProjectUrl>
+    <PackageIcon>a.png</PackageIcon>
+    <PackageReleaseNotes>core版</PackageReleaseNotes>
+    <FileVersion>0.0.3.4</FileVersion>
+    <ApplicationIcon>有效.ico</ApplicationIcon>
+    <Copyright>千</Copyright>
+    <AssemblyVersion>1.0.3.5</AssemblyVersion>
+    <Nullable>annotations</Nullable>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>myqz.pfx</AssemblyOriginatorKeyFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <FileAlignment>2048</FileAlignment>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="a.png" />
+    <None Remove="myqz.pfx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Refwst.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+</Project>
